@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="main-body">
+        <h1 id="title">liveLuxury Survey Form</h1>
+        <i id="description">Thank you for taking the time to help us improve the platform</i>
+    
+        <form id="survey-form" action="">
+            <label for="name" id="name-label">Name</label><br>
+            <input required type="text" id="name" placeholder="Enter your name"><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input required type="email" id="email" placeholder="Enter your Email"><br>
+            <label for="age" id="number-label">Age (optional)</label><br>
+            <input type="number" id="number" placeholder="Age" min="18" max="80"><br>
+            <label for="role">Which option best describes your current role?</label><br>
+            <select name="role" id="dropdown">
+            <option value="Student">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select><br>
+        <div class="boxes">
+        Would you recommend liveLuxury to a friend?<br>
+        <input name="recommend" class="options" id="definitely" type="radio">
+        <label for="definitely">Definitely</label><br>
+        <input name="recommend" class="options" id="maybe" type="radio">
+        <label for="maybe">Maybe</label><br>
+        <input name="recommend" class="options" id="not sure" type="radio">
+        <label for="not sure">Not sure</label><br>
+        </div>
+
+        <label for="feature">What is your favorite feature of liveLuxury?</label><br>
+        <select name="feature" id="feature" >
+            <option value="feature">Select an option</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open source">Open source</option>
+        </select><br>
+        <div class="boxes">
+        What would you like to see improved? (Check all that apply) <br>
+        <input type="checkbox" name="choice" class="options" id="Front-end Projects">
+        <label for="Front-end Projects">Front-end Projects</label><br>
+        <input type="checkbox" name="choice"  class="options" id="Back-end Projects">
+        <label for="Back-end Projects">Back-end Projects</label><br>
+        <input type="checkbox" name="choice" class="options" id="Data Visualization">
+        <label for="Data Visualization">Data Visualization</label><br>
+        <input type="checkbox" name="choice" class="options" id="Open Source Community">
+        <label for="Open Source Community">Open Source Community</label><br>
+        <input type="checkbox" name="choice" class="options" id="Videos">
+        <label for="Videos">Videos</label><br>
+        </div>
+        <label for="comment">Any comments or suggestions?
+        </label><br>
+        <input type="textarea" id="comment"><br>
+        <button id="submit">Submit</button>
+        </form>
+    </div>
+    </main>
+</body>
+</html>
